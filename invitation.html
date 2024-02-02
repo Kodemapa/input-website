@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Day Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Annual Day Invitation</h2>
+        <p>Dear <span id="userName"></span>,</p>
+        <p>You are cordially invited to our Annual Day celebration. Join us for an evening of joy, entertainment, and celebration.</p>
+        <p>Date: [3.02.24]</p>
+        <p>Time: [5:00 P.M]</p>
+        <p>Venue: [IDPS Ballari]</p>
+        <p>We look forward to your presence!</p>
+    </div>
+
+    <script>
+        // Retrieve name from localStorage
+        var userName = localStorage.getItem("userName");
+
+        // Display the name in the invitation
+        document.getElementById("userName").innerText = userName;
+    </script>
+<script>
+    function saveName(event){
+        
+    }
+</script>
+</body>
+</html>
